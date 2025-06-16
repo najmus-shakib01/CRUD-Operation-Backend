@@ -18,13 +18,13 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://crud-operation-mn15.onrender.com",
+    "https://crud-operation-pgbe.onrender.com",
     "http://localhost:5173",
     "http://localhost:5174",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://crud-operation-mn15.onrender.com",
+    "https://crud-operation-pgbe.onrender.com",
     "http://localhost:5173",
 ]
 
