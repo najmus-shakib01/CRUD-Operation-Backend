@@ -8,4 +8,4 @@ services:
         python manage.py migrate
         python manage.py collectstatic --noinput
     start:
-      command: gunicorn todoapp.wsgi:application --workers 2 --bind 0.0.0.0:8000
+      command: gunicorn todoapp.wsgi:application --workers 2 --bind 0.0.0.0:$PORT
