@@ -1,0 +1,11 @@
+services:
+  - name: Crud_Opt
+    env: python
+    build:
+      command: |
+        pip install -r requirements.txt
+        python manage.py makemigrations
+        python manage.py migrate
+        python manage.py collectstatic --noinput
+    start:
+      command: gunicorn your_project.wsgi:application --workers 2 --bind 0.0.0.0:$PORT
