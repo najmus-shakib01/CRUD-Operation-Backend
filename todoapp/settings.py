@@ -15,15 +15,11 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True                       
 
-ALLOWED_HOSTS = [
-    'crud-operation-pgbe.onrender.com',
-    'localhost',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://crud-operation-pgbe.onrender.com",
     "http://localhost:5173",
+    "http://localhost:5174",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True   
